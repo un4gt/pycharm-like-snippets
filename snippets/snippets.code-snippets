@@ -1,0 +1,124 @@
+{
+    "main script entry point" :{
+        "prefix": "main",
+        "body": [
+            "if __name__ == \"__main__\":",
+            "\tpass$0"
+        ],
+        "description": "Create a main script entry point"
+    },
+    "Dict comprehension":{
+        "prefix": "compd",
+        "body": [
+            "{${1:key_expr}: ${2:val_expr} for ${3:var} in ${4:iterable}}"
+        ],
+        "description": "Dict comprehension"
+    },
+    "Dict comprehension with `if`" : {
+        "prefix": "compdi",
+        "body": [
+            "{${1:key_expr}: ${2:val_expr} for ${3:var} in ${4:iterable} if ${5:var_expr_if}}"
+        ],
+        "description": "Dict comprehension with `if`"
+    },
+    "Generator comprehension" : {
+        "prefix": "compg",
+        "body": [
+            "(${1:var_expr} for ${2:var} in ${3:iterable})"
+        ],
+        "description":"Generator comprehension"
+    },
+    "Generator comprehension with `if`": {
+        "prefix": "compgi",
+        "body": [
+            "(${1:var_expr} for ${2:var} in ${3:iterable} if ${4:var_expr_if})"
+        ],
+        "description": "Generator comprehension with `if`"
+    },
+    "List comprehension": {
+        "prefix": "compl",
+        "body": [
+            "[${1:var_expr} for ${2:var} in ${3:iterable}]"
+        ],
+        "description": "List comprehension"
+    },
+    "List comprehension with `if`":{
+        "prefix": "compli",
+        "body": [
+            "[${1:var_expr} for ${2:var} in ${3:iterable} if ${4:var_expr_if}]"
+        ],
+        "description": "List comprehension with `if`"
+    },
+    "Set comprehension":{
+        "prefix": "comps",
+        "body": [
+            "{${1:var_expr} for ${2:var} in ${3:iterable}}"
+        ],
+        "description": "Set comprehension"
+    },
+    "Set comprehension with `if`": {
+        "prefix": "compsi",
+        "body": [
+            "{${1:var_expr} for ${2:var} in ${3:iterable} if ${4:var_expr_if}}"
+        ],
+        "description": "Set comprehension with `if`"
+    },
+    "Iterate (for ... in ...)":{
+        "prefix": "iter",
+        "body": [
+            "for ${1:var} in ${2:iterables}:",
+            "\t${3:pass}"
+        ],
+        "description": "Iterate (for ... in ...)"
+    },
+    "Iterate (for ... in enumerate)": {
+        "prefix": "itere",
+        "body": [
+            "for ${1:index}, ${2:var} in enumerate(${3:iterables}):",
+            "\t${4:pass}"
+        ],
+        "description": "Iterate (for ... in enumerate)"
+    },
+    "Property getter": {
+        "prefix": "prop",
+        "body": [
+            "@property",
+            "def ${1:arg_name}(self):",
+            "\treturn self._${1:arg_name}",
+            "$0",
+        ],
+        "description": "Property getter"
+    },
+    "Property getter/setter" : {
+        "prefix":"props",
+        "body": [
+            "@property",
+            "def ${1:arg_name}(self):",
+            "\treturn self._${2}",
+            "",
+            "@${1}.setter",
+            "def ${1}(self, ${3:value}):",
+            "\tself._${2} = ${3}",
+            "$0"
+        ],
+        "description": "Property getter/setter"
+    },
+    "Property getter/setter/deleter":{
+        "prefix": "propsd",
+        "body": [
+            "@property",
+            "def ${1:arg_name}(self):",
+            "\treturn self._${2}",
+            "",
+            "@${1}.setter",
+            "def ${1}(self, ${3:value}):",
+            "\tself._${2} = ${3:value}",
+            "",
+            "@${1}.deleter",
+            "def ${1}(self):",
+            "\tdel self._${2}",
+            "$0"
+        ],
+        "description": "Property getter/setter/deleter"
+    }
+}
