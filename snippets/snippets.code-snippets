@@ -3,7 +3,7 @@
         "prefix": "main",
         "body": [
             "if __name__ == \"__main__\":",
-            "\tpass$0"
+            "\t$0"
         ],
         "description": "Create a main script entry point"
     },
@@ -120,5 +120,31 @@
             "$0"
         ],
         "description": "Property getter/setter/deleter"
+    },
+    "python functions":{
+        "prefix": "def",
+        "body": [
+            "def ${1:func_name}(${2: func_args}):",
+            "\t...$0"
+        ],
+        "description": "python functions"
+    },
+    "python class":{
+        "prefix": "klass",
+        "body": [
+            "class ${1:class_name}:",
+            "",
+            "\t...$0"
+        ],
+        "description": "python class without inheritance"
+    },
+    "python class inheritance":{
+        "prefix": "klassi",
+        "body": [
+            "class ${1:class_name}(${2:super_class}):",
+            "",
+            "\t...$0"
+        ],
+        "description": "python class with inheritance"
     }
 }
