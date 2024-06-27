@@ -42,3 +42,34 @@ if __name__ == "__main__":
     import sys
     print(fib(int(sys.argv[1])))
 ```
+
+## Added in v0.0.4
+
+### `def`
+
+type **def** and **tab**
+
+```python
+def func_name(func_args):
+    ...
+```
+
+### `klass`
+
+type **klass** and **tab**
+
+```python
+class class_name:
+    
+    ...
+```
+
+### `klassi`
+
+type **klass** and **tab**
+
+```python
+class class_name(super_class):
+
+    ...
+```
