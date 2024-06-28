@@ -11,7 +11,7 @@ jobs:
         with:
           version: 8
       - name: Install dependicies
-        run: pnpm install --prod
+        run: pnpm install
       - name: Install vsce
         run: pnpm add -g @vscode/vsce
       - name: publish extension
