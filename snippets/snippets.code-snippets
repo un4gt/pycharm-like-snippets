@@ -129,6 +129,14 @@
         ],
         "description": "python functions"
     },
+    "python async functions":{
+        "prefix": "adef",
+        "body": [
+            "async def ${1:func_name}(${2: func_args}):",
+            "\t...$0"
+        ],
+        "description": "python async functions"
+    },
     "python class":{
         "prefix": "klass",
         "body": [
