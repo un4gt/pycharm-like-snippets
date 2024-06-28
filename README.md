@@ -73,3 +73,14 @@ class class_name(super_class):
 
     ...
 ```
+
+## Added in v0.0.5
+
+### `adef`
+
+type **adef** and **tab**
+
+```python
+async def func_name(func_args):
+    ...
+```
