@@ -15,7 +15,7 @@ jobs:
       - name: Install vsce
         run: pmpm add -g @vscode/vsce
       - name: login
-        uses: vsce login tumuerzunong
+        run: vsce login tumuerzunong
       - name: publish
         env:
             VSCE_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
