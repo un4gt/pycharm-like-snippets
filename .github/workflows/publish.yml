@@ -18,4 +18,5 @@ jobs:
         env:
             VSCE_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
         run: |
-          pnpm exec vsce publish --no-dependencies -- --pat $VSCE_PAT
+          pnpm --no-dependencies vsce publish --pat $VSCE_PAT
+          
