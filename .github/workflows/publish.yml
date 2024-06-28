@@ -11,9 +11,9 @@ jobs:
         with:
           version: 8
       - name: Install dependicies
-        run: pnpm install
+        run: pnpm install --prod
       - name: Install vsce
-        run: pmpm add -g @vscode/vsce
+        run: pnpm add -g @vscode/vsce
       - name: login
         run: vsce login tumuerzunong
       - name: publish
