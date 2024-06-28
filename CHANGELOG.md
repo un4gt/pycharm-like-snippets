@@ -4,17 +4,34 @@ All notable changes to the "pycharm-like-snippets" extension will be documented 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## v0.0.1
 
 - Initial release
 
-## Added
+## v0.0.2
 
-- v0.0.2 Add the **wrap expression with print** feature, which can be used through keybindings.
+Added:
 
-- v0.0.3 Add extension icon
+- the **wrap expression with print** feature, which can be used through keybindings.
 
-- v0.0.4 Add:
-  - `def`   : python functions
-  - `klass` : python class without inheritance
-  - `klassi`: python class with inheritance
+## v0.0.3
+
+Added:
+
+- extension icon.
+
+## v0.0.4
+
+Added:
+
+- `def`: Python function.
+- `klass`: Python class without inheritance.
+- `klassi`: Python class with inheritance.
+
+## v0.0.5
+
+*Oops, forgot to add `async def` snippets in v0.0.4.*
+
+Added:
+
+- `adef`: Python async function.
