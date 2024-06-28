@@ -1,11 +1,4 @@
-on:
-    release:
-        types:
-        - published
-    push:
-        tags:
-            - 'v*'
-    workflow_dispatch:
+on: push
 
 
 name: Deploy Extension
@@ -19,8 +12,12 @@ jobs:
           version: 8
       - name: Install dependicies
         run: pnpm install
-      - name: Publish to Visual Studio Marketplace
-        uses: HaaLeo/publish-vscode-extension@v1
-        with:
-          pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
-          registryUrl: https://marketplace.visualstudio.com
+      - name: Install vsce
+        run: pmpm add -g @vscode/vsce
+      - name: login
+        uses: vsce login tumuerzunong
+      - name: publish
+        env:
+            VSCE_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+        run: |
+          pnpm vsce publish --pat $VSCE_PAT --no-dependicies
