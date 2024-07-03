@@ -3,12 +3,12 @@
   "displayName": "pycharm-like-snippets",
   "description": "get snippets in vs_code like pycharm",
   "publisher": "tumuerzunong",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "icon": "images/pycharm-like-snippets.png",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/jennier0107/pycharm-like-snippets"
+		"url": "https://github.com/un4gt/pycharm-like-snippets"
 	},
   "engines": {
     "vscode": "^1.90.0"
