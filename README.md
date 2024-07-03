@@ -20,6 +20,13 @@ Now support these sinppets:
 |prop|Property getter|
 |props|Property getter/setter|
 |propsd|Property getter/setter/deleter|
+|deff|python functions|
+|adef|python async functions|
+|klass|python class without inheritance|
+|klassi|python class with inheritance|
+|forr|python for x in range(y)|
+|afor|python async for in aiterables|
+|openw|python open file by with statement|
 
 ## Added in v0.0.2
 
@@ -45,9 +52,7 @@ if __name__ == "__main__":
 
 ## Added in v0.0.4
 
-### `def`
-
-type **def** and **tab**
+### `deff`
 
 ```python
 def func_name(func_args):
@@ -56,8 +61,6 @@ def func_name(func_args):
 
 ### `klass`
 
-type **klass** and **tab**
-
 ```python
 class class_name:
     
@@ -65,8 +68,6 @@ class class_name:
 ```
 
 ### `klassi`
-
-type **klass** and **tab**
 
 ```python
 class class_name(super_class):
@@ -78,9 +79,30 @@ class class_name(super_class):
 
 ### `adef`
 
-type **adef** and **tab**
-
 ```python
 async def func_name(func_args):
     ...
+```
+
+## Added v0.0.6
+
+### `forr`
+
+```python
+for var in range(end):
+    pass
+```
+
+### `afor`
+
+```python
+async for var in aiterables:
+    pass
+```
+
+### `openw`
+
+```python
+with open(fpath, mode="r", encoding="utf-8") as handler:
+    pass
 ```
