@@ -24,7 +24,7 @@ Added:
 
 Added:
 
-- `def`: Python function.
+- `deff`: Python function.
 - `klass`: Python class without inheritance.
 - `klassi`: Python class with inheritance.
 
@@ -35,3 +35,11 @@ Added:
 Added:
 
 - `adef`: Python async function.
+
+## v0.0.6
+
+Added:
+
+- `forr`: Python for range
+- `afor`: Python async for
+- `openw`: Python open file by with statement
