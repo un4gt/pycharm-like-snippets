@@ -27,6 +27,10 @@ Now support these sinppets:
 |forr|python for x in range(y)|
 |afor|python async for in aiterables|
 |openw|python open file by with statement|
+|trye|python try except statement|
+|tryf|python try except finally statement|
+|tryl|python try except else statement|
+|whl|python while loop statement|
 
 ## Added in v0.0.2
 
@@ -104,5 +108,45 @@ async for var in aiterables:
 
 ```python
 with open(fpath, mode="r", encoding="utf-8") as handler:
+    pass
+```
+
+## Added v0.0.7
+
+### `trye`
+
+```python
+try:
+    pass
+except Exception:
+    pass
+```
+
+### `tryf`
+
+```python
+try:
+    pass
+except Exception:
+    pass
+finally:
+    pass
+```
+
+### `tryl`
+
+```python
+try:
+    pass
+except Exception:
+    pass
+else:
+    pass
+```
+
+### `whl`
+
+```python
+while xx:
     pass
 ```
