@@ -43,3 +43,12 @@ Added:
 - `forr`: Python for range
 - `afor`: Python async for
 - `openw`: Python open file by with statement
+
+## v0.0.7
+
+Added:
+
+- `trye`: python try except statement
+- `tryf`: python try except finally statement
+- `tryl`: python try except else statement
+- `whl` : python while loop statement
