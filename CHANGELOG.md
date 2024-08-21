@@ -52,3 +52,16 @@ Added:
 - `tryf`: python try except finally statement
 - `tryl`: python try except else statement
 - `whl` : python while loop statement
+
+## v0.0.8
+
+Added:
+
+- `wth`: python with statement
+- `witha`: python with...as statement
+- `awith`: python async with statement
+
+Modified:
+
+- `iter` to `fori`
+- `itere` to `fore`
