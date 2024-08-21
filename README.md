@@ -4,33 +4,36 @@ Get snippets in vs_code like pycharm !
 
 Now support these sinppets:
 
-|prefix|description|
-|:------:|:-------:|
-|main|main script entry point|
-|compd|Dict comprehension|
-|compdi|Dict comprehension with `if`|
-|compg|Generator comprehension|
-|compgi|Generator comprehension with `if`|
-|compl|List comprehension|
-|compli|List comprehension with `if`|
-|comps|Set comprehension|
-|compsi|Set comprehension with `if`|
-|iter|Iterate (for ... in ...)|
-|itere|Iterate (for ... in enumerate)|
-|prop|Property getter|
-|props|Property getter/setter|
-|propsd|Property getter/setter/deleter|
-|deff|python functions|
-|adef|python async functions|
-|klass|python class without inheritance|
-|klassi|python class with inheritance|
-|forr|python for x in range(y)|
-|afor|python async for in aiterables|
-|openw|python open file by with statement|
-|trye|python try except statement|
-|tryf|python try except finally statement|
-|tryl|python try except else statement|
-|whl|python while loop statement|
+|No.|prefix|description|
+|:-----:|:------:|:-------:|
+|1|main|main script entry point|
+|2|compd|Dict comprehension|
+|3|compdi|Dict comprehension with `if`|
+|4|compg|Generator comprehension|
+|5|compgi|Generator comprehension with `if`|
+|6|compl|List comprehension|
+|7|compli|List comprehension with `if`|
+|8|comps|Set comprehension|
+|9|compsi|Set comprehension with `if`|
+|10|fori|Iterate (for ... in ...)|
+|11|fore|Iterate (for ... in enumerate)|
+|12|prop|Property getter|
+|13|props|Property getter/setter|
+|14|propsd|Property getter/setter/deleter|
+|15|deff|python functions|
+|16|adef|python async functions|
+|17|klass|python class without inheritance|
+|18|klassi|python class with inheritance|
+|19|forr|python for x in range(y)|
+|20|afor|python async for in aiterables|
+|21|openw|python open file by with statement|
+|22|trye|python try except statement|
+|23|tryf|python try except finally statement|
+|24|tryl|python try except else statement|
+|25|whl|python while loop statement|
+|26|wth|python with statement|
+|27|witha|python with...as statement|
+|28|awith|python async with statement|
 
 ## Added in v0.0.2
 
@@ -58,12 +61,16 @@ if __name__ == "__main__":
 
 ### `deff`
 
+python functions
+
 ```python
 def func_name(func_args):
     ...
 ```
 
 ### `klass`
+
+python class without inheritance
 
 ```python
 class class_name:
@@ -73,6 +80,8 @@ class class_name:
 
 ### `klassi`
 
+python class with inheritance
+
 ```python
 class class_name(super_class):
 
@@ -80,6 +89,8 @@ class class_name(super_class):
 ```
 
 ## Added in v0.0.5
+
+python async functions
 
 ### `adef`
 
@@ -92,6 +103,8 @@ async def func_name(func_args):
 
 ### `forr`
 
+python for x in range(y)
+
 ```python
 for var in range(end):
     pass
@@ -99,12 +112,16 @@ for var in range(end):
 
 ### `afor`
 
+python async for in aiterables
+
 ```python
 async for var in aiterables:
     pass
 ```
 
 ### `openw`
+
+python open file by with statement
 
 ```python
 with open(fpath, mode="r", encoding="utf-8") as handler:
@@ -115,6 +132,8 @@ with open(fpath, mode="r", encoding="utf-8") as handler:
 
 ### `trye`
 
+python try except statement
+
 ```python
 try:
     pass
@@ -123,6 +142,8 @@ except Exception:
 ```
 
 ### `tryf`
+
+python try except finally statement
 
 ```python
 try:
@@ -135,6 +156,8 @@ finally:
 
 ### `tryl`
 
+python try except else statement
+
 ```python
 try:
     pass
@@ -146,7 +169,43 @@ else:
 
 ### `whl`
 
+python while loop statement
+
 ```python
 while xx:
     pass
 ```
+
+## Added v0.0.8
+
+### `wth`
+
+python with statement
+
+```python
+with xxx:
+    pass
+```
+
+### `witha`
+
+python with...as statement
+
+```python
+with xxx as xx:
+    pass
+```
+
+### `awith`
+
+python async with statement
+
+```python
+async with xxx:
+    pass
+```
+
+## Modified v0.0.8
+
+- `iter` to `fori`
+- `itere` to `fore`
