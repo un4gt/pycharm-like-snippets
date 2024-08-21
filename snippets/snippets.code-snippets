@@ -220,5 +220,29 @@
             "\tpass$0"
         ],
         "description": "python while loop statement"
-    }
+    },
+    "with statement": {
+        "prefix": "wth",
+        "body": [
+            "with ${1:}:",
+            "\tpass$0"
+        ],
+        "description": "python with statement"
+    },
+    "with...as statement": {
+        "prefix": "witha",
+        "body": [
+            "with ${1:} as ${2:}:",
+            "\tpass$0"
+        ],
+        "description": "python with...as statement"
+    },
+    "async with statement": {
+        "prefix": "awith",
+        "body": [
+            "async with ${1:}",
+            "\tpass$0"
+        ],
+        "description": "python async with statement"
+    },
 }
