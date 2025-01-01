@@ -65,3 +65,15 @@ Modified:
 
 - `iter` to `fori`
 - `itere` to `fore`
+
+## V0.1.0
+
+Added:
+
+- `im`: python import expression
+
+- `ims`: python import ... as expression
+
+- `fim`: python from ... import expression
+
+- `fims`: python from ... import as expression

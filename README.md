@@ -34,6 +34,10 @@ Now support these sinppets:
 |26|wth|python with statement|
 |27|witha|python with...as statement|
 |28|awith|python async with statement|
+|29|im|python import expression|
+|30|ims|python import ... as expression|
+|31|fim|python from ... import expression|
+|32|fims|python from ... import expression as|
 
 ## Added in v0.0.2
 
@@ -209,3 +213,37 @@ async with xxx:
 
 - `iter` to `fori`
 - `itere` to `fore`
+
+## Added v0.1.0
+
+### `im`
+
+python import expression
+
+```python
+import module
+```
+
+### `ims`
+
+python import ... as expression
+
+```python
+import moudle as alias
+```
+
+### `fim`
+
+python from ... import expression
+
+```python
+from module import xxx
+```
+
+### `fims`
+
+python from ... import as expression
+
+```python
+from module import xxx as alias
+```
