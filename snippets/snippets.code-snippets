@@ -245,4 +245,32 @@
         ],
         "description": "python async with statement"
     },
+    "import expression": {
+        "prefix": "im",
+        "body": [
+            "import ${1:module}"
+        ],
+        "description": "python import expression"
+    },
+    "import expression as": {
+        "prefix": "ims",
+        "body": [
+            "import ${1:module} as ${2:alias}"
+        ],
+        "description": "python import ... as expression"
+    },
+    "from import expression": {
+        "prefix": "fim",
+        "body": [
+            "from ${1:module} import ${2:module}"
+        ],
+        "description": "python from ... import expression"
+    },
+    "from import expression as": {
+        "prefix": "fims",
+        "body": [
+            "from ${1:module} import ${2:module} as ${3:alias}"
+        ],
+        "description": "python from ... import expression as"
+    },
 }
