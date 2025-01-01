@@ -11,22 +11,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with: 
-          version: 9.0.0
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
-      - name: Install VSCE
-        run: pnpm add -g @vscode/vsce
-      - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
-
-      - name: Build extension
-        run: pnpm vsce package --no-dependencies
-
+      - run: npm ci
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v1
         with:
