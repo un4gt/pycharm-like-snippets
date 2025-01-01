@@ -7,9 +7,9 @@
   "license": "MIT",
   "icon": "images/pycharm-like-snippets.png",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/un4gt/pycharm-like-snippets"
-	},
+    "type": "git",
+    "url": "https://github.com/un4gt/pycharm-like-snippets"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -17,7 +17,9 @@
     "Snippets",
     "Other"
   ],
-  "activationEvents": ["onLanguage:python"],
+  "activationEvents": [
+    "onLanguage:python"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "keybindings": [
@@ -35,10 +37,10 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "echo 'ok'",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "pnpm run compile && pnpm run lint",
+    "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
   },
