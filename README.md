@@ -1,5 +1,13 @@
 # pycharm-like-snippets
 
+![Visual Studio Marketplace Release Date](https://img.shields.io/visual-studio-marketplace/release-date/tumuerzunong.pycharm-like-snippets)
+![GitHub License](https://img.shields.io/github/license/un4gt/pycharm-like-snippets)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/tumuerzunong.pycharm-like-snippets)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/tumuerzunong.pycharm-like-snippets)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/tumuerzunong.pycharm-like-snippets)
+![Visual Studio Marketplace Last Updated](https://img.shields.io/visual-studio-marketplace/last-updated/tumuerzunong.pycharm-like-snippets)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/un4gt/pycharm-like-snippets/.github%2Fworkflows%2Frelease.yaml)
+
 Get snippets in vs_code like pycharm !
 
 Now support these sinppets:
